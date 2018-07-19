@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Kitsunebi_Metal_Example' do
+  pod 'Kitsunebi_Metal', :path => '../'
+
+  target 'Kitsunebi_Metal_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
