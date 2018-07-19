@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Kitsunebi_Metal
 //
-//  Created by tomoya.hirano on 07/19/2018.
-//  Copyright (c) 2018 tomoya.hirano. All rights reserved.
+//  Created by noppefoxwolf on 07/19/2018.
+//  Copyright (c) 2018 noppefoxwolf. All rights reserved.
 //
 
 import UIKit

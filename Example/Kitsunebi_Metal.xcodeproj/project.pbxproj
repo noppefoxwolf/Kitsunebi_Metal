@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		682F0EE707558D7DF872E5DE /* Pods_Kitsunebi_Metal_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A37C38FF66ECED80FD846C /* Pods_Kitsunebi_Metal_Example.framework */; };
+		D76DAAB721009B9F00A4FC2D /* main.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB521009B9F00A4FC2D /* main.mp4 */; };
+		D76DAAB821009B9F00A4FC2D /* alpha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB621009B9F00A4FC2D /* alpha.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05AA00ABA2411194DC8107F4 /* Kitsunebi_Metal.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Kitsunebi_Metal.podspec; path = ../Kitsunebi_Metal.podspec; sourceTree = "<group>"; };
-		1C8AD44366FE55156E7ADAB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		05AA00ABA2411194DC8107F4 /* Kitsunebi_Metal.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Kitsunebi_Metal.podspec; path = ../Kitsunebi_Metal.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C8AD44366FE55156E7ADAB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DCACB429F174A577A2D00A2 /* Pods-Kitsunebi_Metal_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Example/Pods-Kitsunebi_Metal_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Kitsunebi_Metal_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitsunebi_Metal_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +47,9 @@
 		89FF1F14F094E15FB48E80F3 /* Pods-Kitsunebi_Metal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Example/Pods-Kitsunebi_Metal_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DAF5344C06B7127B3DB7D4 /* Pods_Kitsunebi_Metal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitsunebi_Metal_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B733DE0DDB7FF7F58B665B75 /* Pods-Kitsunebi_Metal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Tests/Pods-Kitsunebi_Metal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA604C31CCA98D46EDD6FD0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D76DAAB521009B9F00A4FC2D /* main.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.mp4; sourceTree = "<group>"; };
+		D76DAAB621009B9F00A4FC2D /* alpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha.mp4; sourceTree = "<group>"; };
+		DA604C31CCA98D46EDD6FD0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ECFB22A88AFD6764FE220967 /* Pods-Kitsunebi_Metal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Tests/Pods-Kitsunebi_Metal_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 		607FACD21AFB9204008FA782 /* Example for Kitsunebi_Metal */ = {
 			isa = PBXGroup;
 			children = (
+				D76DAAB621009B9F00A4FC2D /* alpha.mp4 */,
+				D76DAAB521009B9F00A4FC2D /* main.mp4 */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -212,10 +218,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3NZF62PCA7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3NZF62PCA7;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -245,6 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76DAAB721009B9F00A4FC2D /* main.mp4 in Resources */,
+				D76DAAB821009B9F00A4FC2D /* alpha.mp4 in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -410,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -456,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -469,7 +479,9 @@
 			baseConfigurationReference = 89FF1F14F094E15FB48E80F3 /* Pods-Kitsunebi_Metal_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NZF62PCA7;
 				INFOPLIST_FILE = Kitsunebi_Metal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -484,7 +496,9 @@
 			baseConfigurationReference = 3DCACB429F174A577A2D00A2 /* Pods-Kitsunebi_Metal_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NZF62PCA7;
 				INFOPLIST_FILE = Kitsunebi_Metal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -498,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B733DE0DDB7FF7F58B665B75 /* Pods-Kitsunebi_Metal_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3NZF62PCA7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECFB22A88AFD6764FE220967 /* Pods-Kitsunebi_Metal_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3NZF62PCA7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

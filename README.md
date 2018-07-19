@@ -1,6 +1,6 @@
 # Kitsunebi_Metal
 
-[![CI Status](https://img.shields.io/travis/tomoya.hirano/Kitsunebi_Metal.svg?style=flat)](https://travis-ci.org/tomoya.hirano/Kitsunebi_Metal)
+[![CI Status](https://img.shields.io/travis/noppefoxwolf/Kitsunebi_Metal.svg?style=flat)](https://travis-ci.org/noppefoxwolf/Kitsunebi_Metal)
 [![Version](https://img.shields.io/cocoapods/v/Kitsunebi_Metal.svg?style=flat)](https://cocoapods.org/pods/Kitsunebi_Metal)
 [![License](https://img.shields.io/cocoapods/l/Kitsunebi_Metal.svg?style=flat)](https://cocoapods.org/pods/Kitsunebi_Metal)
 [![Platform](https://img.shields.io/cocoapods/p/Kitsunebi_Metal.svg?style=flat)](https://cocoapods.org/pods/Kitsunebi_Metal)
@@ -22,7 +22,7 @@ pod 'Kitsunebi_Metal'
 
 ## Author
 
-tomoya.hirano, tomoya.hirano@dena.com
+noppefoxwolf, noppelabs@gmail.com
 
 ## License
 

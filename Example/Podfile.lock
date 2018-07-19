@@ -1,0 +1,16 @@
+PODS:
+  - Kitsunebi_Metal (0.1.0)
+
+DEPENDENCIES:
+  - Kitsunebi_Metal (from `../`)
+
+EXTERNAL SOURCES:
+  Kitsunebi_Metal:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kitsunebi_Metal: c6d77ed989287562cba96b63cfe1576a1d32a5d5
+
+PODFILE CHECKSUM: e9740f1055bb2e81e919466b7bcd0a4e2f5ecc4d
+
+COCOAPODS: 1.5.3
