@@ -17,10 +17,12 @@ public class Player {
   internal var delegate: PlayerDelegate? = nil
   private lazy var displayLink: CADisplayLink = .init(target: self, selector: #selector(Player.update))
   private lazy var renderThread: Thread = .init(target: self, selector: #selector(Player.threadLoop), object: nil)
+  private let fpsKeeper: FPSKeeper
   
   public init(source: SourceVideo) {
     srcAsset = Asset(url: source.src)
     maskAsset = Asset(url: source.mask)
+    fpsKeeper = FPSKeeper(fps: 30)
   }
   
   public func play() {
@@ -46,6 +48,7 @@ public class Player {
   }
   
   @objc private func update(_ link: CADisplayLink) {
+    guard fpsKeeper.checkPast1Frame(link) else { return }
     guard let src = srcAsset.copyNextSampleBuffer() else { return }
     guard let mask = maskAsset.copyNextSampleBuffer() else { return }
     delegate?.player(self, didUpdate: src, mask: mask)

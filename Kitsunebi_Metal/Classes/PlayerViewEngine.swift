@@ -29,7 +29,8 @@ final class PlayerViewEngine {
   
   private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture) {
     let commandBuffer = commandQueue.makeCommandBuffer()!
-    let vertexBuffer = device.makeVertexBuffer(edge: makeFillEdge(dst: CGSize(width: drawable.texture.width, height: drawable.texture.height), src: CGSize(width: src.width, height: src.height)))
+    let edge = makeFillEdge(dst: drawable.texture.size, src: src.size)
+    let vertexBuffer = device.makeVertexBuffer(edge: edge)
     let texCoordBuffer = device.makeTexureCoordBuffer()
     let pipelineState = makeRenderPipelineState(device: device, pixelFormat: .bgra8Unorm, vertexFunctionName: "vertexShader", fragmentFunctionName: "fragmentShader")
     

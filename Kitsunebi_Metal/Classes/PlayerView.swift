@@ -28,9 +28,11 @@ public class PlayerView: UIView, PlayerDelegate {
   
   private func setup() {
     backgroundColor = .clear
+    isUserInteractionEnabled = false
     metalLayer.pixelFormat = .bgra8Unorm
     metalLayer.framebufferOnly = false
     metalLayer.presentsWithTransaction = false
+    metalLayer.drawsAsynchronously = true
   }
   
   public override func layoutSubviews() {
