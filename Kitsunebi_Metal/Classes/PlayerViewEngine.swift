@@ -7,6 +7,7 @@
 
 import MetalKit
 import CoreMedia
+import CoreVideo
 
 final class PlayerViewEngine {
   private let device: MTLDevice
@@ -23,10 +24,10 @@ final class PlayerViewEngine {
   internal func render(to drawable: CAMetalDrawable, src: CMSampleBuffer, mask: CMSampleBuffer) {
     let srcTexture = MTLTextureFactory.make(with: src, textureCache: textureCache)!
     let maskTexture = MTLTextureFactory.make(with: mask, textureCache: textureCache)!
-    render(to: drawable, src: srcTexture, mask: maskTexture)
+    render(to: drawable, src: srcTexture, mask: maskTexture, atTime: 1000)
   }
   
-  private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture) {
+  private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture, atTime time: CFTimeInterval) {
     let commandBuffer = commandQueue.makeCommandBuffer()!
     let vertexBuffer = device.makeVertexBuffer()
     let texCoordBuffer = device.makeTexureCoordBuffer()
@@ -47,7 +48,6 @@ final class PlayerViewEngine {
     
     commandBuffer.present(drawable)
     commandBuffer.commit()
-    commandBuffer.waitUntilCompleted()
   }
   
   private func makeRenderPipelineState(device: MTLDevice, pixelFormat: MTLPixelFormat, vertexFunctionName: String, fragmentFunctionName: String) -> MTLRenderPipelineState {

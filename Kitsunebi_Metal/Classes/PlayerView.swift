@@ -27,7 +27,7 @@ public class PlayerView: UIView, PlayerDelegate {
   }
   
   private func setup() {
-    backgroundColor = .red
+    backgroundColor = .clear
     metalLayer.pixelFormat = .bgra8Unorm
     metalLayer.framebufferOnly = false
     metalLayer.presentsWithTransaction = false

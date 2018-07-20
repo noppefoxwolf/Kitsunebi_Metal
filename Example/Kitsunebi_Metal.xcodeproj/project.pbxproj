@@ -15,8 +15,12 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		682F0EE707558D7DF872E5DE /* Pods_Kitsunebi_Metal_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A37C38FF66ECED80FD846C /* Pods_Kitsunebi_Metal_Example.framework */; };
-		D76DAAB721009B9F00A4FC2D /* main.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB521009B9F00A4FC2D /* main.mp4 */; };
-		D76DAAB821009B9F00A4FC2D /* alpha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB621009B9F00A4FC2D /* alpha.mp4 */; };
+		D760776A2101D56100D9A9E6 /* main.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76077682101D56100D9A9E6 /* main.mp4 */; };
+		D760776B2101D56100D9A9E6 /* alpha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76077692101D56100D9A9E6 /* alpha.mp4 */; };
+		D760776E2101D6AA00D9A9E6 /* alpha_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D760776C2101D6AA00D9A9E6 /* alpha_1.mp4 */; };
+		D760776F2101D6AA00D9A9E6 /* main_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D760776D2101D6AA00D9A9E6 /* main_1.mp4 */; };
+		D76DAAB721009B9F00A4FC2D /* _main.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB521009B9F00A4FC2D /* _main.mp4 */; };
+		D76DAAB821009B9F00A4FC2D /* _alpha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76DAAB621009B9F00A4FC2D /* _alpha.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +51,12 @@
 		89FF1F14F094E15FB48E80F3 /* Pods-Kitsunebi_Metal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Example/Pods-Kitsunebi_Metal_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DAF5344C06B7127B3DB7D4 /* Pods_Kitsunebi_Metal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitsunebi_Metal_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B733DE0DDB7FF7F58B665B75 /* Pods-Kitsunebi_Metal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Tests/Pods-Kitsunebi_Metal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D76DAAB521009B9F00A4FC2D /* main.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.mp4; sourceTree = "<group>"; };
-		D76DAAB621009B9F00A4FC2D /* alpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha.mp4; sourceTree = "<group>"; };
+		D76077682101D56100D9A9E6 /* main.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.mp4; sourceTree = "<group>"; };
+		D76077692101D56100D9A9E6 /* alpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha.mp4; sourceTree = "<group>"; };
+		D760776C2101D6AA00D9A9E6 /* alpha_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha_1.mp4; sourceTree = "<group>"; };
+		D760776D2101D6AA00D9A9E6 /* main_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = main_1.mp4; sourceTree = "<group>"; };
+		D76DAAB521009B9F00A4FC2D /* _main.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = _main.mp4; sourceTree = "<group>"; };
+		D76DAAB621009B9F00A4FC2D /* _alpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = _alpha.mp4; sourceTree = "<group>"; };
 		DA604C31CCA98D46EDD6FD0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ECFB22A88AFD6764FE220967 /* Pods-Kitsunebi_Metal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitsunebi_Metal_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitsunebi_Metal_Tests/Pods-Kitsunebi_Metal_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +105,12 @@
 		607FACD21AFB9204008FA782 /* Example for Kitsunebi_Metal */ = {
 			isa = PBXGroup;
 			children = (
-				D76DAAB621009B9F00A4FC2D /* alpha.mp4 */,
-				D76DAAB521009B9F00A4FC2D /* main.mp4 */,
+				D76DAAB621009B9F00A4FC2D /* _alpha.mp4 */,
+				D76077692101D56100D9A9E6 /* alpha.mp4 */,
+				D760776C2101D6AA00D9A9E6 /* alpha_1.mp4 */,
+				D760776D2101D6AA00D9A9E6 /* main_1.mp4 */,
+				D76077682101D56100D9A9E6 /* main.mp4 */,
+				D76DAAB521009B9F00A4FC2D /* _main.mp4 */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -253,8 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76DAAB721009B9F00A4FC2D /* main.mp4 in Resources */,
-				D76DAAB821009B9F00A4FC2D /* alpha.mp4 in Resources */,
+				D760776F2101D6AA00D9A9E6 /* main_1.mp4 in Resources */,
+				D760776E2101D6AA00D9A9E6 /* alpha_1.mp4 in Resources */,
+				D76DAAB721009B9F00A4FC2D /* _main.mp4 in Resources */,
+				D760776A2101D56100D9A9E6 /* main.mp4 in Resources */,
+				D76DAAB821009B9F00A4FC2D /* _alpha.mp4 in Resources */,
+				D760776B2101D56100D9A9E6 /* alpha.mp4 in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

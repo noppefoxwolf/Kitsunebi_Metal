@@ -15,6 +15,10 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
+  }
+  
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     let src = Bundle.main.url(forResource: "main", withExtension: "mp4")!
     let mask = Bundle.main.url(forResource: "alpha", withExtension: "mp4")!
     let source = SourceVideo(src: src, mask: mask)
