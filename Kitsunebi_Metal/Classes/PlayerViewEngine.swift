@@ -24,10 +24,10 @@ final class PlayerViewEngine {
   internal func render(to drawable: CAMetalDrawable, src: CMSampleBuffer, mask: CMSampleBuffer) {
     let srcTexture = MTLTextureFactory.make(with: src, textureCache: textureCache)!
     let maskTexture = MTLTextureFactory.make(with: mask, textureCache: textureCache)!
-    render(to: drawable, src: srcTexture, mask: maskTexture, atTime: 1000)
+    render(to: drawable, src: srcTexture, mask: maskTexture)
   }
   
-  private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture, atTime time: CFTimeInterval) {
+  private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture) {
     let commandBuffer = commandQueue.makeCommandBuffer()!
     let vertexBuffer = device.makeVertexBuffer()
     let texCoordBuffer = device.makeTexureCoordBuffer()
