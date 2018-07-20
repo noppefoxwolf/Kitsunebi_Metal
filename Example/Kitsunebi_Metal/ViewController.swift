@@ -19,8 +19,8 @@ class ViewController: UIViewController {
   }
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    let src = Bundle.main.url(forResource: "main", withExtension: "mp4")!
-    let mask = Bundle.main.url(forResource: "alpha", withExtension: "mp4")!
+    let src = Bundle.main.url(forResource: "_main", withExtension: "mp4")!
+    let mask = Bundle.main.url(forResource: "_alpha", withExtension: "mp4")!
     let source = SourceVideo(src: src, mask: mask)
     let player = Player(source: source)
     

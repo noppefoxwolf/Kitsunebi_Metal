@@ -29,7 +29,7 @@ final class PlayerViewEngine {
   
   private func render(to drawable: CAMetalDrawable, src: MTLTexture, mask: MTLTexture) {
     let commandBuffer = commandQueue.makeCommandBuffer()!
-    let vertexBuffer = device.makeVertexBuffer()
+    let vertexBuffer = device.makeVertexBuffer(edge: makeFillEdge(dst: CGSize(width: drawable.texture.width, height: drawable.texture.height), src: CGSize(width: src.width, height: src.height)))
     let texCoordBuffer = device.makeTexureCoordBuffer()
     let pipelineState = makeRenderPipelineState(device: device, pixelFormat: .bgra8Unorm, vertexFunctionName: "vertexShader", fragmentFunctionName: "fragmentShader")
     
@@ -59,5 +59,21 @@ final class PlayerViewEngine {
     pipelineDesc.colorAttachments[0].pixelFormat = pixelFormat
     
     return try! device.makeRenderPipelineState(descriptor: pipelineDesc)
+  }
+  
+  private func makeFillEdge(dst: CGSize, src: CGSize) -> UIEdgeInsets {
+    let imageRatio = src.width / src.height
+    let viewRatio = dst.width / dst.height
+    if viewRatio < imageRatio { // viewの方が細長い //横がはみ出るパターン //iPhoneX
+      let imageWidth = dst.height * imageRatio
+      let left = ((imageWidth / dst.width) - 1.0) / 2.0
+      return UIEdgeInsets(top: 0, left: left, bottom: 0, right: left)
+    } else if viewRatio > imageRatio { //iPad
+      let viewWidth = src.height * viewRatio
+      let top = ((viewWidth / src.width) - 1.0) / 2.0
+      return UIEdgeInsets(top: top, left: 0, bottom: top, right: 0)
+    } else {
+      return UIEdgeInsets.zero
+    }
   }
 }
