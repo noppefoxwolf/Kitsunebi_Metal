@@ -36,6 +36,7 @@ public class Player: NSObject {
   }
   
   public func cancel() {
+    guard isRunningTheread else { return }
     isRunningTheread = false
     displayLink.remove(from: .current, forMode: .commonModes)
     displayLink.invalidate()

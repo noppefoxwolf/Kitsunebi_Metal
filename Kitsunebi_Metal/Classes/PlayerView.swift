@@ -13,6 +13,7 @@ import CoreMedia
 public class PlayerView: UIView, PlayerDelegate {
   private lazy var engine: PlayerViewEngine = .init(device: metalLayer.device!)
   public var player: Player? = nil {
+    willSet { player?.cancel() }
     didSet { player?.delegate = self }
   }
   
