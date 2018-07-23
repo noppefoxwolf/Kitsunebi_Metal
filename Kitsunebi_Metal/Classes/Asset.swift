@@ -12,6 +12,7 @@ internal class Asset {
   private let reader: AVAssetReader
   private let output: AVAssetReaderTrackOutput
   private let asset: AVURLAsset
+  internal var status: AVAssetReaderStatus { return reader.status }
   
   init(url: URL) {
     self.asset = AVURLAsset(url: url)
@@ -26,6 +27,10 @@ internal class Asset {
   }
   
   deinit {
+    cancel()
+  }
+  
+  internal func cancel() {
     reader.cancelReading()
   }
   

@@ -10,9 +10,11 @@ import UIKit
 public struct SourceVideo {
   internal var src: URL
   internal var mask: URL
+  internal var fps: Int
   
-  public init(src: URL, mask: URL) {
+  public init(src: URL, mask: URL, fps: Int) {
     self.src = src
     self.mask = mask
+    self.fps = fps
   }
 }

@@ -41,10 +41,8 @@ public class PlayerView: UIView, PlayerDelegate {
   }
   
   func player(_ player: Player, didUpdate src: CMSampleBuffer, mask: CMSampleBuffer) {
-    autoreleasepool {
-      guard let drawable = metalLayer.nextDrawable() else { return }
-      engine.render(to: drawable, src: src, mask: mask)
-    }
+    guard let drawable = metalLayer.nextDrawable() else { return }
+    engine.render(to: drawable, src: src, mask: mask)
   }
 }
 

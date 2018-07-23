@@ -230,12 +230,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 3NZF62PCA7;
+						DevelopmentTeam = 582LEGWZJK;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 3NZF62PCA7;
+						DevelopmentTeam = 582LEGWZJK;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -495,7 +495,7 @@
 			baseConfigurationReference = 89FF1F14F094E15FB48E80F3 /* Pods-Kitsunebi_Metal_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3NZF62PCA7;
+				DEVELOPMENT_TEAM = 582LEGWZJK;
 				INFOPLIST_FILE = Kitsunebi_Metal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,7 +512,7 @@
 			baseConfigurationReference = 3DCACB429F174A577A2D00A2 /* Pods-Kitsunebi_Metal_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3NZF62PCA7;
+				DEVELOPMENT_TEAM = 582LEGWZJK;
 				INFOPLIST_FILE = Kitsunebi_Metal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,7 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B733DE0DDB7FF7F58B665B75 /* Pods-Kitsunebi_Metal_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3NZF62PCA7;
+				DEVELOPMENT_TEAM = 582LEGWZJK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,7 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECFB22A88AFD6764FE220967 /* Pods-Kitsunebi_Metal_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3NZF62PCA7;
+				DEVELOPMENT_TEAM = 582LEGWZJK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
