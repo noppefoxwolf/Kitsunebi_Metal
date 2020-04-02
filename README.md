@@ -1,6 +1,6 @@
-# [WIP]Kitsunebi_Metal
+# [Archived]Kitsunebi_Metal
 
-Kitsunebi (OpenGLES2 version) [here](https://github.com/noppefoxwolf/Kitsunebi)
+Kitsunebi (Latest version using Metal!) [here](https://github.com/noppefoxwolf/Kitsunebi)
 
 [![CI Status](https://img.shields.io/travis/noppefoxwolf/Kitsunebi_Metal.svg?style=flat)](https://travis-ci.org/noppefoxwolf/Kitsunebi_Metal)
 [![Version](https://img.shields.io/cocoapods/v/Kitsunebi_Metal.svg?style=flat)](https://cocoapods.org/pods/Kitsunebi_Metal)
